@@ -22,11 +22,13 @@ public:
     ~TimerWidget();
     void prepareTimer();
     void updateTimer();
+    void showScramble();
 
 private slots:
     void showTime();
 
 private:
+    void generateScramble();
     Ui::TimerWidget *ui;
     QTime startTime;
     QTimer *timer;

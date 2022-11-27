@@ -3,6 +3,7 @@
 #include <QKeyEvent>
 #include <QTimer>
 #include <QTime>
+#include <cstdlib>
 
 TimerWidget::TimerWidget(QWidget *parent) :
     QWidget(parent),
@@ -11,6 +12,7 @@ TimerWidget::TimerWidget(QWidget *parent) :
     ui->setupUi(this);
     QWidget::setFocusPolicy(Qt::StrongFocus);
     timer = new QTimer(this);
+    generateScramble();
 }
 
 TimerWidget::~TimerWidget()
@@ -25,10 +27,11 @@ void TimerWidget::keyPressEvent(QKeyEvent *event)
         prepareTimer();
     }
 
-    if(event->key() && started)         //Stop timer
+    if(event->key() && started)         //Stop timer and generate new scramble
     {
         started = false;
         timer->stop();
+        generateScramble();
     }
 }
 
@@ -67,7 +70,7 @@ void TimerWidget::prepareTimer()
         if(elapsedPrepareTime.count() > 0.5)
         {
             ready = true;
-            ui->Timer->setText("0.000");
+            ui->Timer->setText("0.00");
             ui->Timer->setStyleSheet(ui->Timer->styleSheet()+("color: rgb(0, 170, 0);"));
         }
     }
@@ -79,7 +82,7 @@ void TimerWidget::showTime()
 
     //calculate time difference from start and swap to minutes, seconds and milliseconds
     int diff = startTime.msecsTo(time);
-    int ms = diff % 1000;
+    int ms = diff % 1000 / 10;
     diff /= 1000;
     int sec = diff % 60;
     diff /= 60;
@@ -97,6 +100,29 @@ void TimerWidget::showTime()
     }
 
     text = QString::fromStdString(str);
-
     ui->Timer->setText(text);
 }
+
+void TimerWidget::generateScramble()
+{
+    std::string scramble = "";
+    std::vector<std::vector<std::string>> moves = {{"R ", "R\' ", "R2 "}, {"L ", "L\' ", "L2 "}, {"U ", "U\' ", "U2 "}, {"D ", "D\' ", "D2 "}, {"F ", "F\' ", "F2 "}, {"B ", "B\' ", "B2 "}};
+    int lastFace = std::rand()%6;
+    int face = std::rand()%6;
+    for(int i = 0; i < 20; i++)
+    {
+        while(face == lastFace)
+        {
+            face = std::rand()%6;
+        }
+        lastFace = face;
+
+        int move = std::rand()%3;
+        scramble += moves[face][move];
+    }
+
+    QString text = QString::fromStdString(scramble);
+    ui->scrambleLabel->setText(text);
+}
+
+
