@@ -20,6 +20,9 @@ set(PROJECT_SOURCES
         mainwindow.h
         mainwindow.ui
         timerwidget.h timerwidget.cpp timerwidget.ui
+        cfopwidget.h cfopwidget.cpp cfopwidget.ui
+        timelistwidget.h timelistwidget.cpp timelistwidget.ui
+        resources.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->centralWidget()->setFixedSize(0,0);
+    connect(ui->widget_2, SIGNAL(insertTime(int)), ui->widget_3, SLOT(insertTime(int)));
     QWidget::setFocusPolicy(Qt::NoFocus);
 }
 

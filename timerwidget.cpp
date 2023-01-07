@@ -1,5 +1,7 @@
 #include "timerwidget.h"
+#include "qnamespace.h"
 #include "ui_timerwidget.h"
+#include "timerwidget.h"
 #include <QKeyEvent>
 #include <QTimer>
 #include <QTime>
@@ -10,8 +12,10 @@ TimerWidget::TimerWidget(QWidget *parent) :
     ui(new Ui::TimerWidget)
 {
     ui->setupUi(this);
-    QWidget::setFocusPolicy(Qt::StrongFocus);
     timer = new QTimer(this);
+
+    QWidget::setFocusPolicy(Qt::StrongFocus);
+
     generateScramble();
 }
 
@@ -27,10 +31,11 @@ void TimerWidget::keyPressEvent(QKeyEvent *event)
         prepareTimer();
     }
 
-    if(event->key() && started)         //Stop timer and generate new scramble
+    if(event->key() && started)         //Stop timer, generate new scramble and insert time into list
     {
-        started = false;
         timer->stop();
+        started = false;
+        emit insertTime(solveTime);
         generateScramble();
     }
 }
@@ -78,25 +83,40 @@ void TimerWidget::prepareTimer()
 
 void TimerWidget::showTime()
 {
+    QString text;
+    std::string str;
+
     QTime time = QTime::currentTime();
 
     //calculate time difference from start and swap to minutes, seconds and milliseconds
     int diff = startTime.msecsTo(time);
-    int ms = diff % 1000 / 10;
-    diff /= 1000;
-    int sec = diff % 60;
-    diff /= 60;
-    int min = diff;
 
-    QString text;
-    std::string str;
-    if(min == 0)    //Short timer when minutes = 0
+    if(diff < 100)
     {
-        str = std::to_string(sec) + "." + std::to_string(ms);
+        str = "0.0"+std::to_string(diff).substr(0,1);
     }
-    else            //Long timer
+    else
     {
-        str = std::to_string(min) + ":" + std::to_string(sec) + "." + std::to_string(ms);
+        solveTime = diff;
+        int ms = diff % 1000;
+        diff /= 1000;
+        int sec = diff % 60;
+        diff /= 60;
+        int min = diff;
+
+        if(min == 0)    //Short timer when minutes = 0
+        {
+            str = std::to_string(sec).substr(0,2) + "." + std::to_string(ms).substr(0,2);
+        }
+        else            //Long timer
+        {
+            str = std::to_string(min) + ":" + std::to_string(sec) + "." + std::to_string(ms).substr(0,2);
+        }
+
+        if(std::to_string(ms).length() == 1)
+        {
+            str += "0";
+        }
     }
 
     text = QString::fromStdString(str);
@@ -106,7 +126,7 @@ void TimerWidget::showTime()
 void TimerWidget::generateScramble()
 {
     std::string scramble = "";
-    std::vector<std::vector<std::string>> moves = {{"R ", "R\' ", "R2 "}, {"L ", "L\' ", "L2 "}, {"U ", "U\' ", "U2 "}, {"D ", "D\' ", "D2 "}, {"F ", "F\' ", "F2 "}, {"B ", "B\' ", "B2 "}};
+    std::vector<std::vector<std::string>> moves = {{"R ", "R' ", "R2 "}, {"L ", "L' ", "L2 "}, {"U ", "U' ", "U2 "}, {"D ", "D' ", "D2 "}, {"F ", "F' ", "F2 "}, {"B ", "B' ", "B2 "}};
     int lastFace = std::rand()%6;
     int face = std::rand()%6;
     for(int i = 0; i < 20; i++)

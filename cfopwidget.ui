@@ -1,0 +1,1583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CfopWidget</class>
+ <widget class="QWidget" name="CfopWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>595</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>14</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabWidget::pane {
+  top:-1px; 
+  background: rgb(245, 245, 245);
+  left: -10px;
+} 
+
+QTabBar::tab {
+  background: rgb(230, 230, 230); 
+  border: 1px solid lightgray; 
+  color: black;
+  padding: 12px;
+} 
+
+QTabBar::tab:selected { 
+  background: rgb(245, 245, 245); 
+  color: black;
+  margin-bottom: -1px; 
+}</string>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::North</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideLeft</enum>
+     </property>
+     <property name="documentMode">
+      <bool>false</bool>
+     </property>
+     <property name="tabsClosable">
+      <bool>false</bool>
+     </property>
+     <property name="movable">
+      <bool>false</bool>
+     </property>
+     <property name="tabBarAutoHide">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>F2L</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="0">
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Segoe UI Semibold</family>
+           <pointsize>14</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget::item {
+  left: 10px;
+  color: white;
+}
+
+QTableWidget::item:selected {
+  background: white;
+  color: black;
+};
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>false</bool>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="showGrid">
+          <bool>true</bool>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::NoPen</enum>
+         </property>
+         <property name="sortingEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="cornerButtonEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="rowCount">
+          <number>41</number>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>100</number>
+         </attribute>
+         <attribute name="horizontalHeaderHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>120</number>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>8</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>9</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>10</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>11</string>
+          </property>
+         </row>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <row/>
+         <column>
+          <property name="text">
+           <string>img</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>algorithm</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="background">
+           <brush brushstyle="NoBrush">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </property>
+          <property name="foreground">
+           <brush brushstyle="NoBrush">
+            <color alpha="0">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/1.png</normaloff>:/img/f2l/1.png</iconset>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>U (R U' R')</string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/2.png</normaloff>:/img/f2l/2.png</iconset>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>F R' F' R</string>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/3.png</normaloff>:/img/f2l/3.png</iconset>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string>U' R U R' U2 (R U' R')</string>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/4.png</normaloff>:/img/f2l/4.png</iconset>
+          </property>
+         </item>
+         <item row="3" column="1">
+          <property name="text">
+           <string>d R' U' R U2' (R' U R)</string>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/5.png</normaloff>:/img/f2l/5.png</iconset>
+          </property>
+         </item>
+         <item row="4" column="1">
+          <property name="text">
+           <string>U' R U2' R' U2 (R U' R')</string>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/6.png</normaloff>:/img/f2l/6.png</iconset>
+          </property>
+         </item>
+         <item row="5" column="1">
+          <property name="text">
+           <string>R' F R F'</string>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/7.png</normaloff>:/img/f2l/7.png</iconset>
+          </property>
+         </item>
+         <item row="6" column="1">
+          <property name="text">
+           <string>y' R' U R U' d' (R U R')</string>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/8.png</normaloff>:/img/f2l/8.png</iconset>
+          </property>
+         </item>
+         <item row="7" column="1">
+          <property name="text">
+           <string>R U' R' U d (R' U' R)</string>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/9.png</normaloff>:/img/f2l/9.png</iconset>
+          </property>
+         </item>
+         <item row="8" column="1">
+          <property name="text">
+           <string>y' (R' U' R)</string>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/10.png</normaloff>:/img/f2l/10.png</iconset>
+          </property>
+         </item>
+         <item row="9" column="1">
+          <property name="text">
+           <string>(R U R')</string>
+          </property>
+         </item>
+         <item row="10" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/11.png</normaloff>:/img/f2l/11.png</iconset>
+          </property>
+         </item>
+         <item row="10" column="1">
+          <property name="text">
+           <string>d R' U' R U'(R' U' R)</string>
+          </property>
+         </item>
+         <item row="11" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/12.png</normaloff>:/img/f2l/12.png</iconset>
+          </property>
+         </item>
+         <item row="11" column="1">
+          <property name="text">
+           <string>U' R U R' U (R U R')</string>
+          </property>
+         </item>
+         <item row="12" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/13.png</normaloff>:/img/f2l/13.png</iconset>
+          </property>
+         </item>
+         <item row="12" column="1">
+          <property name="text">
+           <string>U' R U2' R' d (R' U' R)</string>
+          </property>
+         </item>
+         <item row="13" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/14.png</normaloff>:/img/f2l/14.png</iconset>
+          </property>
+         </item>
+         <item row="13" column="1">
+          <property name="text">
+           <string>R' U2 R2 U R2' U R</string>
+          </property>
+         </item>
+         <item row="14" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/15.png</normaloff>:/img/f2l/15.png</iconset>
+          </property>
+         </item>
+         <item row="14" column="1">
+          <property name="text">
+           <string>d R' U R U' (R' U' R)</string>
+          </property>
+         </item>
+         <item row="15" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/16.png</normaloff>:/img/f2l/16.png</iconset>
+          </property>
+         </item>
+         <item row="15" column="1">
+          <property name="text">
+           <string>U' R U' R' U(R U R')</string>
+          </property>
+         </item>
+         <item row="16" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/17.png</normaloff>:/img/f2l/17.png</iconset>
+          </property>
+         </item>
+         <item row="16" column="1">
+          <property name="text">
+           <string>R U2' R' U' (R U R')</string>
+          </property>
+         </item>
+         <item row="17" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/18.png</normaloff>:/img/f2l/18.png</iconset>
+          </property>
+         </item>
+         <item row="17" column="1">
+          <property name="text">
+           <string>y' R' U2 R U (R' U' R)</string>
+          </property>
+         </item>
+         <item row="18" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/19.png</normaloff>:/img/f2l/19.png</iconset>
+          </property>
+         </item>
+         <item row="18" column="1">
+          <property name="text">
+           <string>U R U2 R' U (R U' R')</string>
+          </property>
+         </item>
+         <item row="19" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/20.png</normaloff>:/img/f2l/20.png</iconset>
+          </property>
+         </item>
+         <item row="19" column="1">
+          <property name="text">
+           <string>y' U' R' U2 R U' (R' U R)</string>
+          </property>
+         </item>
+         <item row="20" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/21.png</normaloff>:/img/f2l/21.png</iconset>
+          </property>
+         </item>
+         <item row="20" column="1">
+          <property name="text">
+           <string>U2 R U R' U (R U' R')</string>
+          </property>
+         </item>
+         <item row="21" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/22.png</normaloff>:/img/f2l/22.png</iconset>
+          </property>
+         </item>
+         <item row="21" column="1">
+          <property name="text">
+           <string>y' U2 R' U' R U' (R' U R)</string>
+          </property>
+         </item>
+         <item row="22" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/23.png</normaloff>:/img/f2l/23.png</iconset>
+          </property>
+         </item>
+         <item row="22" column="1">
+          <property name="text">
+           <string>y' U R' U2 R y R U2 R' U R U' R'</string>
+          </property>
+         </item>
+         <item row="23" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/24.png</normaloff>:/img/f2l/24.png</iconset>
+          </property>
+         </item>
+         <item row="23" column="1">
+          <property name="text">
+           <string>U' R U2' R' y' R' U2 R U' R' U R</string>
+          </property>
+         </item>
+         <item row="24" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/25.png</normaloff>:/img/f2l/25.png</iconset>
+          </property>
+         </item>
+         <item row="24" column="1">
+          <property name="text">
+           <string>U R U' R' d' (L' U L)</string>
+          </property>
+         </item>
+         <item row="25" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/26.png</normaloff>:/img/f2l/26.png</iconset>
+          </property>
+         </item>
+         <item row="25" column="1">
+          <property name="text">
+           <string>y' U' R' U R r' U' R U M'</string>
+          </property>
+         </item>
+         <item row="26" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/27.png</normaloff>:/img/f2l/27.png</iconset>
+          </property>
+         </item>
+         <item row="26" column="1">
+          <property name="text">
+           <string>y' R' U' R U (R' U' R)</string>
+          </property>
+         </item>
+         <item row="27" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/28.png</normaloff>:/img/f2l/28.png</iconset>
+          </property>
+         </item>
+         <item row="27" column="1">
+          <property name="text">
+           <string>R U R' U' (R U R')</string>
+          </property>
+         </item>
+         <item row="28" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/29.png</normaloff>:/img/f2l/29.png</iconset>
+          </property>
+         </item>
+         <item row="28" column="1">
+          <property name="text">
+           <string>R U' R' U (R U' R')</string>
+          </property>
+         </item>
+         <item row="29" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/30.png</normaloff>:/img/f2l/30.png</iconset>
+          </property>
+         </item>
+         <item row="29" column="1">
+          <property name="text">
+           <string>y' R' U R U' (R' U R)</string>
+          </property>
+         </item>
+         <item row="30" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/31.png</normaloff>:/img/f2l/31.png</iconset>
+          </property>
+         </item>
+         <item row="30" column="1">
+          <property name="text">
+           <string>U' R U' R' U2 (R U' R')</string>
+          </property>
+         </item>
+         <item row="31" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/32.png</normaloff>:/img/f2l/32.png</iconset>
+          </property>
+         </item>
+         <item row="31" column="1">
+          <property name="text">
+           <string>d R' U R U2 (R' U R)</string>
+          </property>
+         </item>
+         <item row="32" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/33.png</normaloff>:/img/f2l/33.png</iconset>
+          </property>
+         </item>
+         <item row="32" column="1">
+          <property name="text">
+           <string>U' R U R' d (R' U' R)</string>
+          </property>
+         </item>
+         <item row="33" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/34.png</normaloff>:/img/f2l/34.png</iconset>
+          </property>
+         </item>
+         <item row="33" column="1">
+          <property name="text">
+           <string>d R' U' R d' (R U R')</string>
+          </property>
+         </item>
+         <item row="34" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/35.png</normaloff>:/img/f2l/35.png</iconset>
+          </property>
+         </item>
+         <item row="34" column="1">
+          <property name="text">
+           <string>R U' R' d (R' U R)</string>
+          </property>
+         </item>
+         <item row="35" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/36.png</normaloff>:/img/f2l/36.png</iconset>
+          </property>
+         </item>
+         <item row="35" column="1">
+          <property name="text">
+           <string>[R U R' U'][R U R' U'](R U R')</string>
+          </property>
+         </item>
+         <item row="36" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/37.png</normaloff>:/img/f2l/37.png</iconset>
+          </property>
+         </item>
+         <item row="36" column="1">
+          <property name="text">
+           <string>R U' R' U' R U R' U2 (R U' R')</string>
+          </property>
+         </item>
+         <item row="37" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/38.png</normaloff>:/img/f2l/38.png</iconset>
+          </property>
+         </item>
+         <item row="37" column="1">
+          <property name="text">
+           <string>R U R' U2 R U' R' U(R U R')</string>
+          </property>
+         </item>
+         <item row="38" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/39.png</normaloff>:/img/f2l/39.png</iconset>
+          </property>
+         </item>
+         <item row="38" column="1">
+          <property name="text">
+           <string>R U' R' d R' U' R U' (R' U' R)</string>
+          </property>
+         </item>
+         <item row="39" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/40.png</normaloff>:/img/f2l/40.png</iconset>
+          </property>
+         </item>
+         <item row="39" column="1">
+          <property name="text">
+           <string>R U R' U' R U' R' U2 y' (R' U' R)</string>
+          </property>
+         </item>
+         <item row="40" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/f2l/41.png</normaloff>:/img/f2l/41.png</iconset>
+          </property>
+         </item>
+         <item row="40" column="1">
+          <property name="text">
+           <string>R U' R' U y' R' U2 R U2' (R' U R)</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>OLL</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="tableWidget_2">
+         <property name="font">
+          <font>
+           <family>Segoe UI Semibold</family>
+           <pointsize>14</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget::item {
+  left: 10px;
+  color: white;
+}
+
+QTableWidget::item:selected {
+  background: white;
+  color: black;
+};
+</string>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>120</number>
+         </attribute>
+         <attribute name="verticalHeaderHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>8</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>9</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>10</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>img</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>algorithm</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/oll/1.png</normaloff>:/img/oll/1.png</iconset>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>F R U R' U' F' f R U R' U' f'</string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/oll/2.png</normaloff>:/img/oll/2.png</iconset>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>F R U R' U' F'</string>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/oll/3.png</normaloff>:/img/oll/3.png</iconset>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string>f R U R' U' f'</string>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/oll/4.png</normaloff>:/img/oll/4.png</iconset>
+          </property>
+         </item>
+         <item row="3" column="1">
+          <property name="text">
+           <string>R U2 R' U' R U' R'</string>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/oll/5.png</normaloff>:/img/oll/5.png</iconset>
+          </property>
+         </item>
+         <item row="4" column="1">
+          <property name="text">
+           <string>R U R' U R U' R' U R U2 R'</string>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/oll/6.png</normaloff>:/img/oll/6.png</iconset>
+          </property>
+         </item>
+         <item row="5" column="1">
+          <property name="text">
+           <string>F R' F' r U R U' r'</string>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/oll/7.png</normaloff>:/img/oll/7.png</iconset>
+          </property>
+         </item>
+         <item row="6" column="1">
+          <property name="text">
+           <string>R U2 R2 U' R2 U' R2 U2 R</string>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/oll/8.png</normaloff>:/img/oll/8.png</iconset>
+          </property>
+         </item>
+         <item row="7" column="1">
+          <property name="text">
+           <string>R U R' U R U2 R'</string>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/oll/9.png</normaloff>:/img/oll/9.png</iconset>
+          </property>
+         </item>
+         <item row="8" column="1">
+          <property name="text">
+           <string>r U R' U' r' F R F'</string>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/oll/10.png</normaloff>:/img/oll/10.png</iconset>
+          </property>
+         </item>
+         <item row="9" column="1">
+          <property name="text">
+           <string>R2 D R' U2 R D' R' U2 R'</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>PLL</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="font">
+          <font>
+           <family>Segoe UI Semibold</family>
+           <pointsize>14</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget::item {
+  left: 10px;
+  color: white;
+}
+
+QTableWidget::item:selected {
+  background: white;
+  color: black;
+};
+
+</string>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>100</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="verticalScrollMode">
+          <enum>QAbstractItemView::ScrollPerPixel</enum>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>120</number>
+         </attribute>
+         <attribute name="verticalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>7</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>8</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>9</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>10</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>11</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>12</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>13</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>14</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>15</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>16</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>17</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>18</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>19</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>20</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>21</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>img</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>algorithm</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/1.png</normaloff>:/img/pll/1.png</iconset>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>x L2 D2 L' U' L D2 L' U L'</string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/2.png</normaloff>:/img/pll/2.png</iconset>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>x' L2 D2 L U L' D2 L U' L</string>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/3.png</normaloff>:/img/pll/3.png</iconset>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string>R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R</string>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/4.png</normaloff>:/img/pll/4.png</iconset>
+          </property>
+         </item>
+         <item row="3" column="1">
+          <property name="text">
+           <string>R2 U R' U R' U' R U' R2 U' D R' U R D'</string>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/5.png</normaloff>:/img/pll/5.png</iconset>
+          </property>
+         </item>
+         <item row="4" column="1">
+          <property name="text">
+           <string>R' U' R U D' R2 U R' U R U' R U' R2 D</string>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/6.png</normaloff>:/img/pll/6.png</iconset>
+          </property>
+         </item>
+         <item row="5" column="1">
+          <property name="text">
+           <string>R2 U' R U' R U R' U R2 U D' R U' R' D</string>
+          </property>
+         </item>
+         <item row="6" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/7.png</normaloff>:/img/pll/7.png</iconset>
+          </property>
+         </item>
+         <item row="6" column="1">
+          <property name="text">
+           <string>R U R' U' D R2 U' R U' R' U R' U R2 D'</string>
+          </property>
+         </item>
+         <item row="7" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/8.png</normaloff>:/img/pll/8.png</iconset>
+          </property>
+         </item>
+         <item row="7" column="1">
+          <property name="text">
+           <string>x R2 F R F' R U2 r' U r U2</string>
+          </property>
+         </item>
+         <item row="8" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/9.png</normaloff>:/img/pll/9.png</iconset>
+          </property>
+         </item>
+         <item row="8" column="1">
+          <property name="text">
+           <string>R U R' F' R U R' U' R' F R2 U' R'</string>
+          </property>
+         </item>
+         <item row="9" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/10.png</normaloff>:/img/pll/10.png</iconset>
+          </property>
+         </item>
+         <item row="9" column="1">
+          <property name="text">
+           <string>R U' R' U' R U R D R' U' R D' R' U2 R'</string>
+          </property>
+         </item>
+         <item row="10" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/11.png</normaloff>:/img/pll/11.png</iconset>
+          </property>
+         </item>
+         <item row="10" column="1">
+          <property name="text">
+           <string>R2 F R U R U' R' F' R U2 R' U2 R</string>
+          </property>
+         </item>
+         <item row="11" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/12.png</normaloff>:/img/pll/12.png</iconset>
+          </property>
+         </item>
+         <item row="11" column="1">
+          <property name="text">
+           <string>R U R' U' R' F R2 U' R' U' R U R' F'</string>
+          </property>
+         </item>
+         <item row="12" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/13.png</normaloff>:/img/pll/13.png</iconset>
+          </property>
+         </item>
+         <item row="12" column="1">
+          <property name="text">
+           <string>x' L' U L D' L' U' L D L' U' L D' L' U L D</string>
+          </property>
+         </item>
+         <item row="13" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/14.png</normaloff>:/img/pll/14.png</iconset>
+          </property>
+         </item>
+         <item row="13" column="1">
+          <property name="text">
+           <string>R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'</string>
+          </property>
+         </item>
+         <item row="14" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/15.png</normaloff>:/img/pll/15.png</iconset>
+          </property>
+         </item>
+         <item row="14" column="1">
+          <property name="text">
+           <string>R' U R U' R' F' U' F R U R' F R' F' R U' R</string>
+          </property>
+         </item>
+         <item row="15" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/16.png</normaloff>:/img/pll/16.png</iconset>
+          </property>
+         </item>
+         <item row="15" column="1">
+          <property name="text">
+           <string>R' U R' U' y R' F' R2 U' R' U R' F R F</string>
+          </property>
+         </item>
+         <item row="16" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/17.png</normaloff>:/img/pll/17.png</iconset>
+          </property>
+         </item>
+         <item row="16" column="1">
+          <property name="text">
+           <string>F R U' R' U' R U R' F' R U R' U' R' F R F'</string>
+          </property>
+         </item>
+         <item row="17" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/18.png</normaloff>:/img/pll/18.png</iconset>
+          </property>
+         </item>
+         <item row="17" column="1">
+          <property name="text">
+           <string>M2 U M2 U2 M2 U M2</string>
+          </property>
+         </item>
+         <item row="18" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/19.png</normaloff>:/img/pll/19.png</iconset>
+          </property>
+         </item>
+         <item row="18" column="1">
+          <property name="text">
+           <string>M2 U M U2 M' U M2</string>
+          </property>
+         </item>
+         <item row="19" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/20.png</normaloff>:/img/pll/20.png</iconset>
+          </property>
+         </item>
+         <item row="19" column="1">
+          <property name="text">
+           <string>M2 U' M U2 M' U' M2</string>
+          </property>
+         </item>
+         <item row="20" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="resources.qrc">
+            <normaloff>:/img/pll/21.png</normaloff>:/img/pll/21.png</iconset>
+          </property>
+         </item>
+         <item row="20" column="1">
+          <property name="text">
+           <string>M' U M2 U M2 U M' U2 M2</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

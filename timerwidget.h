@@ -1,6 +1,7 @@
 #ifndef TIMERWIDGET_H
 #define TIMERWIDGET_H
 
+#include "timelistwidget.h"
 #include <QWidget>
 #include <QTime>
 #include <chrono>
@@ -27,12 +28,20 @@ public:
 private slots:
     void showTime();
 
+signals:
+    void insertTime(int time);
+
 private:
     void generateScramble();
+
     Ui::TimerWidget *ui;
     QTime startTime;
     QTimer *timer;
+    TimeListWidget *timelist;
     std::chrono::time_point<std::chrono::steady_clock> prepareTime;
+
+    int solveTime;
+
     bool prepared;
     bool ready;
     bool started;

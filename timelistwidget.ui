@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TimeListWidget</class>
+ <widget class="QWidget" name="TimeListWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>663</width>
+    <height>458</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(42, 42, 42);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableWidget::item {
+  left: 10px;
+  color: white;
+  font: &quot;Calibri&quot; 12px;
+}
+
+QHeaderView::section {
+  font: &quot;Calibri&quot; 14px;
+  font-weight: 700;
+  background: rgb(230, 230, 230); 
+  border: 1px solid lightgray; 
+  color: black;
+  padding-left: 12px;
+  padding-right: 12px;
+} 
+
+</string>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>time</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ao3</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ao5</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ao12</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
