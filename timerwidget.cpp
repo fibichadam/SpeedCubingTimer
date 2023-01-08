@@ -143,6 +143,8 @@ void TimerWidget::generateScramble()
 
     QString text = QString::fromStdString(scramble);
     ui->scrambleLabel->setText(text);
+
+    scrambleList.push_back(scramble);
 }
 
 

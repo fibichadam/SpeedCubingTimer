@@ -15,13 +15,14 @@ class TimeListWidget : public QWidget
 public:
     explicit TimeListWidget(QWidget *parent = nullptr);
     ~TimeListWidget();
+    QTableWidget *table;
 
 private slots:
     void insertTime(int time);
 
 private:
     Ui::TimeListWidget *ui;
-    QTableWidget *table;
+
     std::string intToTimeString(int time);
 
     std::vector<int> calcTime = {};

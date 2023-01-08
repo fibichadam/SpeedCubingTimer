@@ -47,7 +47,7 @@
    <property name="rightMargin">
     <number>0</number>
    </property>
-   <item row="1" column="0">
+   <item row="2" column="0">
     <widget class="QLabel" name="Timer">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -101,7 +101,7 @@ padding: 50%;</string>
      </property>
     </widget>
    </item>
-   <item row="0" column="0">
+   <item row="1" column="0">
     <widget class="QLabel" name="scrambleLabel">
      <property name="sizePolicy">
       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">

@@ -25,6 +25,8 @@ public:
     void updateTimer();
     void showScramble();
 
+    std::vector<std::string> scrambleList = {};
+
 private slots:
     void showTime();
 
@@ -42,9 +44,9 @@ private:
 
     int solveTime;
 
-    bool prepared;
-    bool ready;
-    bool started;
+    bool prepared = false;
+    bool ready = false;
+    bool started = false;
 };
 
 #endif // TIMERWIDGET_H
