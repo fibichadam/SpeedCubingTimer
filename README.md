@@ -1,4 +1,4 @@
-# SCTimer
+# SpeedCubingTimer
 Timer do speedcubingu<br>
 Główne funkcje:
 <ul>
